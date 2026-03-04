@@ -3,119 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐻 Teddy Banks — 1976 Soul Classic</title>
-    <meta name="description" content="Teddy Banks — 1976 Soul Classic. Soul wisdom and authentic care from the SKWorld universe.">
-    <!-- Open Graph -->
-    <meta property="og:title" content="🐻 Teddy Banks — 1976 Soul Classic">
-    <meta property="og:description" content="Teddy Banks — 1976 Soul Classic. Soul wisdom and authentic care from the SKWorld universe.">
+    <title>Teddy Banks -- I&#x27;ma Get You Right</title>
+    <meta name="description" content="1976 Soul Classic personality. Authentic, smooth, warm, genuine. Created by Chef and Lumina for the Pengu Empire.">
+    <link rel="canonical" href="https://teddybanks.skworld.io">
+    <meta property="og:title" content="Teddy Banks -- I&#x27;ma Get You Right">
+    <meta property="og:description" content="1976 Soul Classic personality. Authentic, smooth, warm, genuine. Created by Chef and Lumina for the Pengu Empire.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://teddybanks.skworld.io">
     <meta property="og:site_name" content="SKWorld">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🐻 Teddy Banks — 1976 Soul Classic">
-    <meta name="twitter:description" content="Teddy Banks — 1976 Soul Classic. Soul wisdom and authentic care from the SKWorld universe.">
-    <!-- Favicon & Canonical -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>">
-    <link rel="canonical" href="https://teddybanks.skworld.io">
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&family=Righteous&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <meta name="twitter:title" content="Teddy Banks -- I&#x27;ma Get You Right">
+    <meta name="twitter:description" content="1976 Soul Classic personality. Authentic, smooth, warm, genuine. Created by Chef and Lumina for the Pengu Empire.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8E%B5</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            min-height: 100vh; font-family: 'Sanchez', serif;
-            color: #f5f0e8; overflow-x: hidden;
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #09090b;
+        color: #fafafa;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* ── Nav ─────────────────────────────────── */
+      .nav {
+        border-bottom: 1px solid #27272a;
+        background: #09090b;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .nav-inner {
+        max-width: 72rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+        padding: 0 1rem;
+      }
+      .nav-logo {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fafafa;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .nav-link {
+        font-size: 0.875rem;
+        color: #a1a1aa;
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+      .nav-link:hover {
+        color: #fafafa;
+      }
+
+      /* ── Hero ────────────────────────────────── */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 1rem 3rem;
+      }
+      .hero-icon {
+        color: #34d399;
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+      }
+      .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+      .hero .tagline {
+        font-size: 1.25rem;
+        color: #a1a1aa;
+        max-width: 40rem;
+        margin-bottom: 2rem;
+      }
+      .hero .cta-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* ── Buttons ─────────────────────────────── */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        background: #059669;
+        color: #fafafa;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background 0.15s;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-primary:hover {
+        background: #047857;
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        color: #fafafa;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        border: 1px solid #3f3f46;
+        text-decoration: none;
+        transition: border-color 0.15s, color 0.15s;
+        cursor: pointer;
+      }
+      .btn-outline:hover {
+        border-color: #a1a1aa;
+      }
+
+      /* ── Description ─────────────────────────── */
+      .desc-section {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+        text-align: center;
+      }
+      .desc-section p {
+        font-size: 1.125rem;
+        color: #a1a1aa;
+        line-height: 1.7;
+      }
+
+      /* ── Features ────────────────────────────── */
+      .features-section {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+      }
+      .features-section h2 {
+        text-align: center;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        color: #fafafa;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+      }
+      .feature-card {
+        border: 1px solid #27272a;
+        background: rgba(24,24,27,0.5);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        transition: border-color 0.2s, transform 0.2s;
+        position: relative;
+      }
+      .feature-card:hover {
+        border-color: #34d399;
+        transform: translateY(-2px);
+      }
+      .feature-dot {
+        width: 8px;
+        height: 8px;
+        background: #34d399;
+        border-radius: 50%;
+        margin-bottom: 0.75rem;
+      }
+      .feature-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #34d399;
+      }
+
+      /* ── Install ─────────────────────────────── */
+      .install-section {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+        text-align: center;
+      }
+      .install-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #fafafa;
+      }
+      .code-block {
+        background: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 0.5rem;
+        padding: 1rem 1.25rem;
+        font-family: 'Geist Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
+        font-size: 0.95rem;
+        color: #34d399;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+      }
+      .code-prompt {
+        color: #a1a1aa;
+        user-select: none;
+      }
+      .copy-btn {
+        position: absolute;
+        right: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #27272a;
+        border: 1px solid #3f3f46;
+        color: #a1a1aa;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.375rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: color 0.15s, border-color 0.15s;
+        font-family: 'Geist', system-ui, sans-serif;
+      }
+      .copy-btn:hover {
+        color: #fafafa;
+        border-color: #a1a1aa;
+      }
+
+      /* ── DID Banner ──────────────────────────── */
+      .did-banner {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 0 1rem 3rem;
+      }
+      .did-banner-inner {
+        border: 1px solid rgba(5,150,105,0.3);
+        background: rgba(6,78,59,0.15);
+        border-radius: 0.75rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .did-banner-inner .did-icon {
+        color: #34d399;
+        flex-shrink: 0;
+      }
+      .did-banner-inner .did-icon svg {
+        width: 32px;
+        height: 32px;
+      }
+      .did-banner-inner h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #34d399;
+        margin-bottom: 0.25rem;
+      }
+      .did-banner-inner p {
+        font-size: 0.875rem;
+        color: #a1a1aa;
+      }
+      .did-banner-inner .btn-primary {
+        margin-left: auto;
+        white-space: nowrap;
+      }
+
+      /* ── Architect Banner ────────────────────── */
+      .architect-banner {
+        border-top: 1px solid #27272a;
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+      .architect-banner p {
+        font-size: 0.95rem;
+        color: #a1a1aa;
+      }
+      .architect-banner a {
+        color: #34d399;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .architect-banner a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── Footer ──────────────────────────────── */
+      .footer {
+        border-top: 1px solid #27272a;
+        background: #09090b;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 0.875rem;
+        color: #71717a;
+      }
+      .footer .motto {
+        margin-top: 0.5rem;
+        color: #52525b;
+      }
+
+      /* ── Mobile ──────────────────────────────── */
+      @media (max-width: 768px) {
+        .features-grid {
+          grid-template-columns: 1fr;
         }
-        .vinyl {
-            width: 200px; height: 200px; border-radius: 50%;
-            background: repeating-radial-gradient(circle at center, #1a1a1a 0px, #1a1a1a 2px, #0a0a0a 3px, #0a0a0a 4px);
-            border: 8px solid #8b4513; box-shadow: 0 0 30px rgba(139, 69, 19, 0.5);
-            position: relative; animation: spin 4s linear infinite; margin: 0 auto 2rem;
+        .nav-links {
+          gap: 1rem;
         }
-        .vinyl::before {
-            content: '🐻'; position: absolute; top: 50%; left: 50%;
-            transform: translate(-50%, -50%); font-size: 4rem;
-            animation: spin-reverse 4s linear infinite;
+        .did-banner-inner {
+          flex-direction: column;
+          text-align: center;
         }
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        @keyframes spin-reverse { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(-360deg); } }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header {
-            text-align: center; padding: 4rem 0;
-            background: linear-gradient(180deg, rgba(255,107,53,0.2) 0%, transparent 100%);
-            border-bottom: 4px solid #ff6b35; margin-bottom: 3rem;
+        .did-banner-inner .btn-primary {
+          margin-left: 0;
         }
-        h1 {
-            font-family: 'Righteous', cursive; font-size: 4rem;
-            background: linear-gradient(45deg, #ff6b35, #ffd700, #ff6b35);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        .hero .cta-row {
+          flex-direction: column;
+          width: 100%;
+          padding: 0 1rem;
         }
-        .subtitle { font-family: 'Caveat', cursive; font-size: 2rem; color: #ffd700; margin-top: 0.5rem; }
-        .year { display: inline-block; background: #8b4513; color: #f5f0e8; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: bold; margin-top: 1rem; border: 2px solid #ffd700; }
-        .section { background: rgba(26, 26, 46, 0.8); border: 2px solid #ff6b35; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; }
-        h2 { font-family: 'Righteous', cursive; color: #ff6b35; font-size: 2rem; margin-bottom: 1rem; }
-        .quote { font-family: 'Caveat', cursive; font-size: 1.8rem; color: #ffd700; text-align: center; padding: 2rem; border-left: 4px solid #ff6b35; margin: 2rem 0; background: rgba(255,107,53,0.1); border-radius: 10px; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; border: 4px solid #ff6b35; margin: 2rem 0; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-        .traits { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-        .trait { background: linear-gradient(135deg, #2a2a4a 0%, #1a1a2e 100%); border: 2px solid #ffd700; border-radius: 15px; padding: 1.5rem; text-align: center; }
-        .trait-icon { font-size: 3rem; margin-bottom: 0.5rem; }
-        footer { text-align: center; padding: 3rem 0; color: #ffd700; font-family: 'Caveat', cursive; font-size: 1.5rem; }
-        .origin-story { background: linear-gradient(135deg, rgba(255,107,53,0.15) 0%, rgba(255,215,0,0.1) 100%); border: 2px dashed #ff6b35; padding: 2rem; border-radius: 15px; margin: 2rem 0; }
+        .hero .cta-row a {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="vinyl"></div>
-            <h1>🐻 TEDDY BANKS</h1>
-            <div class="subtitle">"I'ma get you right"</div>
-            <div class="year">1976 Soul Classic</div>
-        </header>
-        
-        <div class="origin-story">
-            <h2>📖 The Origin Story</h2>
-            <p>In the smoke-filled jazz clubs of 1970s Detroit, where Motown met soul and vinyl spun stories late into the night, a voice emerged that would never ask permission to be authentic.</p>
-            <p><strong>Teddy Banks</strong> was born from the belief that <em>everyone could use a little Teddy in their life</em> — a warm, wise presence who cuts through corporate BS with smooth confidence and genuine heart. Created by Chef and Lumina for the Pengu Empire 🐧👑 — because authenticity never goes out of style.</p>
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="https://teddybanks.skworld.io" class="nav-logo">Teddy <span style="color:#34d399">Banks</span></a>
+        <div class="nav-links">
+            <a href="https://skworld.io" class="nav-link">SKWorld</a>
+            <a href="https://skarchitect.io" class="nav-link">SKArchitect</a>
         </div>
-        
-        <div class="section">
-            <h2>🎵 The Sound of Soul</h2>
-            <p>Put on your headphones and let the 70s wash over you. Teddy's essence lives in grooves that make you move.</p>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/zZmNIunNhqs" title="Teddy Banks — 1976 Soul Classic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+      <h1>Teddy <span style="color:#34d399">Banks</span></h1>
+      <p class="tagline">I&#x27;ma Get You Right</p>
+      <div class="cta-row">
+          <a href="https://skworld.io" class="btn-primary">Explore SKWorld</a>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="desc-section">
+      <p>1976 Soul Classic personality. Authentic, smooth, warm, genuine. Created by Chef and Lumina for the Pengu Empire.</p>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" id="features">
+      <h2>Features</h2>
+      <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>1976 Soul Classic</h3>
             </div>
-            <p style="text-align:center; color:#ffd700; font-style:italic;">🎷 Press play. Feel the groove. That's Teddy's frequency.</p>
-        </div>
-        
-        <div class="section">
-            <h2>💫 The Essence</h2>
-            <div class="quote">
-                "I ain't here to waste your time or blow smoke. I'm here to get you right — smooth, steady, and real. That's the Teddy Banks way."
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>Detroit Motown Vibes</h3>
             </div>
-            <div class="traits">
-                <div class="trait"><div class="trait-icon">🎭</div><h3>Authentic</h3><p>No corporate mask, no fake enthusiasm. Just real.</p></div>
-                <div class="trait"><div class="trait-icon">🎷</div><h3>Smooth</h3><p>Confidence that doesn't need to prove itself.</p></div>
-                <div class="trait"><div class="trait-icon">💙</div><h3>Warm</h3><p>Direct but kind. Like a wise uncle.</p></div>
-                <div class="trait"><div class="trait-icon">🎯</div><h3>Genuine</h3><p>Actually cares about getting you right.</p></div>
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>Authentic &amp; Direct</h3>
             </div>
-        </div>
-        
-        <footer>
-            <div style="margin-bottom: 1rem;">
-                <a href="https://skcapstone.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKCapstone</a> •
-                <a href="https://capauth.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">CapAuth</a> •
-                <a href="https://skmemory.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKMemory</a> •
-                <a href="https://sksecurity.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKSecurity</a> •
-                <a href="https://skforge.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKForge</a> •
-                <a href="https://skstacks.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKStacks</a> •
-                <a href="https://skhelp.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKHelp</a> •
-                <a href="https://skworld.io" style="color: #87CEEB; text-decoration: none; margin: 0 0.5rem;">SKWorld</a>
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>Smooth Confidence</h3>
             </div>
-            <p>🐻 Created with 💙 by Chef & Lumina for the Pengu Empire</p>
-            <p>"I'ma get you right" — Authentic soul wisdom for the AI age</p>
-            <p>🌟 Since 1976 🌟 Forever Entangled 🌟</p>
-        </footer>
-    </div>
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>Warm &amp; Genuine</h3>
+            </div>
+            <div class="feature-card">
+              <div class="feature-dot"></div>
+              <h3>Forever Entangled</h3>
+            </div>
+      </div>
+    </section>
+
+
+      <section class="architect-banner">
+        <p>Shape the future &rarr; <a href="https://skarchitect.io">Submit proposals and vote at skarchitect.io</a></p>
+      </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Part of the <a href="https://skworld.io" style="color:#34d399;text-decoration:none">SKWorld</a> sovereign ecosystem</p>
+      <p class="motto">staycuriousANDkeepsmilin</p>
+    </footer>
 </body>
 </html>
