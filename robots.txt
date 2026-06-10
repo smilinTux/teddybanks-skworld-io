@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teddybanks.skworld.io/sitemap.xml
